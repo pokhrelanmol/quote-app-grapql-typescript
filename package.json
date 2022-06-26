@@ -1,23 +1,30 @@
 {
-  "name": "lco-graphql",
-  "version": "1.0.0",
-  "description": "a standard babel setup",
-  "main": "index.js",
-  "scripts": {
-    "start": "nodemon ./index.js --exec babel-node -e js"
-  },
-  "keywords": [
-    "babel",
-    "es6"
-  ],
-  "author": "hitesh choudhary",
-  "license": "ISC",
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-stage-0": "^6.24.1"
-  },
-  "dependencies": {
-    "nodemon": "^2.0.6"
-  }
+    "name": "lco-graphql",
+    "version": "1.0.0",
+    "description": "a standard babel setup",
+    "main": "index.ts",
+    "scripts": {
+        "start": "nodemon ./index.ts "
+    },
+    "author": "Anmol ",
+    "license": "ISC",
+    "dependencies": {
+        "apollo-server": "^3.9.0",
+        "bcryptjs": "^2.4.3",
+        "dotenv": "^16.0.1",
+        "express": "^4.18.1",
+        "express-graphql": "^0.12.0",
+        "graphql": "^16.5.0",
+        "http-errors": "^2.0.0",
+        "jsonwebtoken": "^8.5.1",
+        "mongoose": "^6.4.0",
+        "ts-node": "^10.8.1",
+        "typescript": "^4.7.4",
+        "uniqid": "^5.4.0"
+    },
+    "devDependencies": {
+        "@types/bcryptjs": "^2.4.2",
+        "@types/http-errors": "^1.8.2",
+        "@types/jsonwebtoken": "^8.5.8"
+    }
 }

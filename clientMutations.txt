@@ -1,0 +1,19 @@
+-------------------------------------------------------------------
+
+mutation createUser($newUser:UserSignUpInput!){
+  user:createUser(
+    newUser:$newUser    
+  ){
+    firstName
+    lastName
+  }
+}
+
+---------------------------------------------------------------------
+  mutation signInUser($user:UserSignInInput!){
+  user:signInUser(
+    userCredential:$user    
+  ){
+   accessToken
+  }
+}
