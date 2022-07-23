@@ -1,13 +1,14 @@
 -------------------------------------------------------------------
-
-mutation createUser($newUser:UserSignUpInput!){
-  user:createUser(
-    newUser:$newUser    
+mutation signUpUser($newUser:UserSignUpInput!){
+  user:signUpUser (
+      newUser:$newUser    
   ){
-    firstName
-    lastName
+    email
+    _id
+
   }
-}
+  
+   }
 
 ---------------------------------------------------------------------
   mutation signInUser($user:UserSignInInput!){

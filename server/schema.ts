@@ -1,5 +1,12 @@
 import { gql } from "apollo-server";
 const typeDefs = gql`
+    type UserWithoutQuotes {
+        firstName: String!
+        lastName: String!
+        email: String!
+        password: String!
+        _id: ID!
+    }
     type User {
         firstName: String!
         lastName: String!
@@ -27,9 +34,9 @@ const typeDefs = gql`
         accessToken: String
     }
     type Mutation {
-        signUpUser(newUser: UserSignUpInput): User
-        signInUser(userCredential: UserSignInInput): JwtAccessToken
-        createQuote(title: String): String
+        signUpUser(newUser: UserSignUpInput!): UserWithoutQuotes!
+        signInUser(userCredential: UserSignInInput!): JwtAccessToken!
+        createQuote(title: String!): String
     }
     input UserSignUpInput {
         firstName: String!

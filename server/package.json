@@ -4,7 +4,8 @@
     "description": "a standard babel setup",
     "main": "index.ts",
     "scripts": {
-        "start": "nodemon ./index.ts "
+        "start": "nodemon ./index.ts ",
+        "codegen": "graphql-codegen --config codegen.yml"
     },
     "author": "Anmol ",
     "license": "ISC",
@@ -23,8 +24,12 @@
         "uniqid": "^5.4.0"
     },
     "devDependencies": {
+        "@graphql-codegen/cli": "2.6.2",
         "@types/bcryptjs": "^2.4.2",
         "@types/http-errors": "^1.8.2",
-        "@types/jsonwebtoken": "^8.5.8"
+        "@types/jsonwebtoken": "^8.5.8",
+        "@graphql-codegen/typescript-resolvers": "2.6.6",
+        "@graphql-codegen/typescript-mongodb": "2.3.11",
+        "@graphql-codegen/typescript": "2.5.1"
     }
 }

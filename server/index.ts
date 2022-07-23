@@ -15,7 +15,7 @@ import Quote from "./models/Quote";
 import typeDefs from "./schema";
 
 import resolvers from "./resolvers";
-interface TokenInterface {
+export interface TokenInterface {
     userId: string;
 }
 const context = async ({ req }: ReqResType) => {

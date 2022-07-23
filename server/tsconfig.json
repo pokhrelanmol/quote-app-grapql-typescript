@@ -9,6 +9,6 @@
         "sourceMap": true,
         "esModuleInterop": true
     },
-    "exclude": ["node_modules"],
+    "exclude": ["server/node_modules"],
     "include": ["./**/*.ts"]
 }
